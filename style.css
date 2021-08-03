@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.card {
+
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 80%;
+    height: 60%;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.copy {
+    margin: 5%;
+}
+
+.img-background {
+    background-color: hsl(280, 100%, 72%);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.img-desktop {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    mix-blend-mode: multiply;
+    filter: brightness(1) contrast(0.65)
+    /* opacity: 0.65;
+    filter: brightness(0.6) ; */
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+.accent {
+    color: hsl(277, 64%, 61%);
+}
+
+.attribution {
+    display: none;
+}
