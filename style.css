@@ -6,7 +6,7 @@ html, body {
 body {
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
     display: flex;
     justify-content: center;
@@ -20,14 +20,24 @@ body {
 
     background-color: hsl(244, 38%, 16%);
     display: flex;
-    width: 80%;
-    height: 60%;
-    justify-content: space-between;
+    width: 75%;
+    height: 50%;
     border-radius: 10px;
+    max-width: 1083px;
+    max-height: 450px;
 }
 
 .copy {
-    margin: 5%;
+    margin: 5% 7% 5% 5%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.copy-text {
+    max-width: 90%;
+    line-height: 1.75;
 }
 
 .img-background {
@@ -48,6 +58,28 @@ body {
 h1 {
     color: hsl(0, 0%, 100%);
     margin: 0;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+}
+.stat-block-group {
+    text-transform: uppercase;
+    display: flex;
+}
+
+.stat-block {
+    text-align: left;
+    margin: 0 0 0 0;
+}
+
+.stat {
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.lowercase {
+    text-transform: lowercase;
 }
 
 .accent {
