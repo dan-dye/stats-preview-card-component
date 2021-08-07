@@ -30,8 +30,6 @@ body {
     margin: 6% 4% 6% 6%;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .copy-text {
@@ -39,14 +37,12 @@ body {
     line-height: 1.75;
     margin-bottom: 18%;
     letter-spacing: 0.015;
-
 }
 
 .img-background {
     background-color: hsl(280, 100%, 72%);
     border-radius: 0 10px 10px 0;
     display: flex;
-
 }
 
 .img-desktop {
@@ -54,15 +50,12 @@ body {
     border-radius: 0 10px 10px 0;
     mix-blend-mode: multiply;
     filter: brightness(1) contrast(0.65)
-    /* opacity: 0.65;
-    filter: brightness(0.6) ; */
 }
 
 h1 {
     color: hsl(0, 0%, 100%);
     margin: 0 0 8%;
     font-size: 2.2rem;
-    /* font-size: 35px; */
     font-family: 'Lexend Deca', sans-serif;
 }
 
