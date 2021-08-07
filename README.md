@@ -14,7 +14,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -28,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-01.png)
+![](./images/screenshot-01.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/dan-dye/stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://dan-dye.github.io/stats-preview-card-component/)
+- Solution URL: [Github Repository](https://github.com/dan-dye/stats-preview-card-component)
+- Live Site URL: [Github Page](https://dan-dye.github.io/stats-preview-card-component/)
 
 ## My process
 
