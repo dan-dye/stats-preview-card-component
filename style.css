@@ -1,35 +1,57 @@
 html, body {
     margin: 0;
     height: 100%;
-    font-size: 15px;
+    font-size: 1.4vmin;
 }
 
 body {
     background-color: hsl(233, 47%, 7%);
-
     font-family: 'Inter', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.05em;
+    min-height: 0;
+    min-width: 0;
+
+}
+
+.top {
+    display: flex;
+    flex-grow: 1;
+}
+
+.middle {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    flex-grow: 1;
 }
 
 .card {
-
     background-color: hsl(244, 38%, 16%);
     display: flex;
-    width: 80%;
-    height: 55%;
+    flex-direction: row;
+    /* width: 100%;
+    height: 100%; */
+    min-height: 40vh;
     border-radius: 10px;
-    max-width: 1083px;
-    max-height: 450px;
+    /* max-width: 1083px;
+    max-height: 450px; */
 }
 
 .copy {
-    margin: 6% 4% 6% 6%;
+    padding: 6%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .copy-text {
@@ -37,26 +59,38 @@ body {
     line-height: 1.75;
     letter-spacing: 0.015;
     flex-grow: 1;
+    
 }
 
 .img-background {
-    background-color: hsl(280, 100%, 72%);
+    /* background-color: hsl(280, 100%, 72%); */
+    background: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 0 10px 10px 0;
+    min-width: 50%;
     display: flex;
 }
 
 .img-desktop {
-    height: 100%;
+    background-color: hsl(280, 100%, 72%);
+    mix-blend-mode: multiply;
     min-width: 100%;
+    max-width: 100%;
+}
+    /* min-width: 100%; 
+    max-width: 100%;
     border-radius: 0 10px 10px 0;
     mix-blend-mode: multiply;
-    filter: brightness(1) contrast(0.65)
-}
+    filter: brightness(1) contrast(0.65);
+} */
 
 h1 {
     color: hsl(0, 0%, 100%);
-    margin: 0 0 8%;
-    font-size: 2.2rem;
+    margin: 0;
+    padding-bottom: 5%;
+    /* font-size: 2.2rem; */
+    font-size: 3.2vmin;
     font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -68,12 +102,14 @@ h1 {
 
 .stat-block {
     text-align: left;
-    margin: 0 14% 0 0;
+    margin: 0;
+    padding: 0 3vmin 0 0;
 }
 
 .stat {
     color: hsl(0, 0%, 100%);
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 2.5vmin;
     font-weight: 700;
     margin-bottom: 8%;
 }
@@ -97,103 +133,159 @@ h1 {
     display: none;
 }
 
-@media screen and (max-width: 1341px) {
-    body {
-        text-align: center;
-    }
 
+@media screen and (max-width: 935px) {
     .card {
         flex-direction: column-reverse;
-        min-height: 95%;
-        width: 45%;
+        margin: 10px 30px 10px 30px;
+        /* min-height: 800px; */
         justify-content: flex-end;
+        min-height: 80vh;
+        max-height: 80vh;
+        max-width: 80vw;
 
+    }
+
+    h1 {
+        font-size: 5vmin;
+        text-align: center;
+        padding-bottom: 20px;
     }
 
     .copy {
-        align-items: center;
-        margin: 10% 8% 10%;
-        height: 100%;
-        justify-content: flex-start;
+        padding-top: 11%;
+        padding-right: 9%;
+        padding-left: 9%;
+        flex-shrink: 1;
+        flex-grow: 1;
     }
 
     .copy-text {
-        margin-bottom: 10%;
-        align-items: center;
+        font-size: 2.5vmin;
+        text-align: center;
+        max-width: 100%;
+        max-height: 20vh;
+        padding-bottom: 20px;
     }
-
     .img-background {
+        min-height: 30vh;
         border-radius: 10px 10px 0 0;
     }
 
-    .img-desktop {
-        width: 100%;
-        border-radius: 10px 10px 0 0;
+    .middle {
+        flex-grow: 5;
+        flex-shrink: 0;
+    }
+
+    .top {
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+
+    .bottom {
+        flex-grow: 0;
+        flex-shrink: 1;
     }
 
     .stat-block-group {
-        height: 100%;
+        /* flex-direction: column;*/
         justify-content: space-around;
-        align-items: center;
-        min-width: 100%;
+        /* min-height: 20vh;
+        padding-bottom: 10px;  */
     }
 
     .stat-block {
-        margin: 0;
         text-align: center;
-    }
-
-    .stat-name {
-        margin-bottom: 10%;
+        padding-bottom: 20px;
+        padding-right: 0;
     }
 
     .stat {
-        margin-bottom: 2%;
+        font-size: 5vmin;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
-    
-    @media screen and (max-width: 800px) {
-
-        .card {
-            width: 75%;
-        }
+    .stat-name {
+        font-size: 2.5vmin;
     }
-
-    @media screen and (max-width: 421px) {
-
-
+    @media screen and (max-width: 500px) {
         .card {
-            width: 87%;
-            min-height: 82%;
+            flex-direction: column-reverse;
+            margin: 10px 30px 10px 30px;
+            justify-content: flex-end;
+            /* min-height: 80vh;
+            max-height: 80vh;
+            max-width: 80vw; */
     
         }
-
+    
         h1 {
-            font-size: 1.7rem;
+            font-size: 6.5vmin;
+            text-align: center;
+            padding-bottom: 20px;
         }
-
+    
         .copy {
-            margin: 10% 7% 8%;
+            /* padding-top: 11%;
+            padding-right: 9%;
+            padding-left: 9%; */
+            padding: 2vmin;
+            flex-shrink: 0;
+            flex-grow: 1;
+            max-height: 100vh;
         }
-
+    
         .copy-text {
-            font-size: 0.85rem;
+            font-size: 3vmin;
+            text-align: center;
+            max-width: 100%;
+            max-height: 20vh;
+            padding-bottom: 2vh;
         }
-
+        .img-background {
+            min-height: 20vh;
+            max-width: 80vw;
+            border-radius: 10px 10px 0 0;
+        }
+    
+        .middle {
+            flex-grow: 5;
+            flex-shrink: 0;
+        }
+    
+        .top {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+    
+        .bottom {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+    
         .stat-block-group {
             flex-direction: column;
             justify-content: space-around;
-            min-width: 100%;
+            /* min-height: 20vh; */
+            padding-bottom: 10px;
         }
-
+    
+        .stat-block {
+            text-align: center;
+            padding-bottom: 20px;
+            padding-right: 0;
+        }
+    
         .stat {
-            font-size: 1.5rem;
-            margin-bottom: 8%;
+            font-size: 5vmin;
+            margin: 0;
+            margin-bottom: 0;
+            padding-bottom: 2vmin;
         }
-
+    
         .stat-name {
-            font-size: 0.7rem;
+            font-size: 3vmin;
         }
     }
-
 }
