@@ -1,0 +1,43 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.top {
+    /* background-color: red; */
+    flex: 1;
+}
+
+.middle {
+    display: flex;
+    flex: 9;
+}
+
+.bottom {
+    /* background-color: green; */
+    flex: 1;
+}
+
+.middle-left {
+    flex: 1;
+    /* background-color: blueviolet; */
+}
+
+.middle-middle {
+    flex: 13;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.middle-right {
+    flex: 1;
+    /* background-color: yellow; */
+}
